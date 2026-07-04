@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="jaksaa Akademie — Aus Erfahrung wachsen">
+  <!-- Hintergrund -->
+  <rect width="1200" height="630" fill="#FAF6EF"/>
+  <!-- Sand-Rahmen -->
+  <rect x="24" y="24" width="1152" height="582" rx="18" fill="none" stroke="#EDE7DB" stroke-width="2"/>
+  <!-- Terrakotta-Akzentbalken oben -->
+  <rect x="24" y="24" width="1152" height="10" rx="5" fill="#BF6545"/>
+
+  <!-- Kicker -->
+  <text x="600" y="212" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" letter-spacing="7" fill="#7A7068">WEITERBILDUNG FÜR BERUFLICHE VERÄNDERUNG</text>
+
+  <!-- Wortmarke -->
+  <text x="600" y="352" text-anchor="middle" font-family="Lora, Georgia, 'Times New Roman', serif" font-size="150" font-weight="500" letter-spacing="10" fill="#2A2018">jaksaa</text>
+  <text x="600" y="410" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="300" letter-spacing="26" fill="#2A2018">AKADEMIE</text>
+
+  <!-- Trennlinie -->
+  <line x1="480" y1="452" x2="720" y2="452" stroke="#BF6545" stroke-width="2"/>
+
+  <!-- Tagline -->
+  <text x="600" y="502" text-anchor="middle" font-family="Lora, Georgia, serif" font-style="italic" font-size="30" fill="#52473C">Aus Erfahrung wachsen</text>
+</svg>

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Interne Backups nicht indexieren
+Disallow: /alte%20Versionen/
+
+Sitemap: https://jaksaa.de/sitemap.xml

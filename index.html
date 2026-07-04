@@ -3,15 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>jaksaa Akademie — Aus Erfahrung wachsen</title>
-  <meta name="description" content="jaksaa Akademie — Weiterbildung für Menschen in beruflicher Veränderung. Fundierte Kurse, die Fachkompetenz und persönliche Entwicklung zusammendenken.">
+  <title>jaksaa Akademie · Aus Erfahrung wachsen</title>
+  <meta name="description" content="jaksaa Akademie · Weiterbildung für Menschen in beruflicher Veränderung. Fundierte Kurse, die Fachkompetenz und persönliche Entwicklung zusammendenken.">
   <meta name="theme-color" content="#FAF6EF">
+  <link rel="canonical" href="https://jaksaa.de/">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.png" sizes="any">
+  <link rel="apple-touch-icon" href="/favicon.png">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="jaksaa Akademie — Aus Erfahrung wachsen">
+  <meta property="og:title" content="jaksaa Akademie · Aus Erfahrung wachsen">
   <meta property="og:description" content="Weiterbildung für Menschen in beruflicher Veränderung. Fundierte Kurse, die Fachkompetenz und persönliche Entwicklung zusammendenken.">
   <meta property="og:locale" content="de_DE">
+  <meta property="og:url" content="https://jaksaa.de/">
+  <meta property="og:site_name" content="jaksaa Akademie">
+  <meta property="og:image" content="https://jaksaa.de/og-default.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="jaksaa Akademie · Aus Erfahrung wachsen">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="jaksaa Akademie · Aus Erfahrung wachsen">
+  <meta name="twitter:description" content="Weiterbildung für Menschen in beruflicher Veränderung. Fundierte Kurse, die Fachkompetenz und persönliche Entwicklung zusammendenken.">
+  <meta name="twitter:image" content="https://jaksaa.de/og-default.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -350,14 +368,33 @@
       .btn:hover, .card:hover { transform: none; }
     }
   </style>
+
+  <!-- JSON-LD: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "jaksaa Akademie",
+    "alternateName": "jaksaa Akademie (Tietoa GmbH)",
+    "url": "https://jaksaa.de/",
+    "logo": "https://jaksaa.de/og-default.png",
+    "slogan": "Aus Erfahrung wachsen",
+    "description": "Weiterbildung für Menschen in beruflicher Veränderung. Fundierte Kurse, die Fachkompetenz und persönliche Entwicklung zusammendenken.",
+    "email": "info@jaksaa.de"
+  }
+  </script>
+
+  <!-- TODO Plausible: Konto auf plausible.io anlegen, Domain jaksaa.de eintragen, dann folgende Zeile einkommentieren (siehe manuelle Schritte im Abschlussbericht). Cookieless, kein Banner nötig.
+  <script defer data-domain="jaksaa.de" src="https://plausible.io/js/script.js"></script>
+  -->
 </head>
 <body>
   <a class="skip" href="#main">Zum Inhalt springen</a>
 
   <header class="site-header">
-    <a class="brand" href="/" aria-label="jaksaa Akademie – Startseite">
-      <svg viewBox="0 0 280 95" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="jaksaa Akademie – Aus Erfahrung wachsen">
-        <title>jaksaa Akademie – Aus Erfahrung wachsen</title>
+    <a class="brand" href="/" aria-label="jaksaa Akademie · Startseite">
+      <svg viewBox="0 0 280 95" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="jaksaa Akademie · Aus Erfahrung wachsen">
+        <title>jaksaa Akademie · Aus Erfahrung wachsen</title>
         <text x="140" y="46" text-anchor="middle" font-family="Lora, Georgia, serif" font-size="40" font-weight="400" letter-spacing="3.2" fill="#2A2018">jaksaa</text>
         <text x="140" y="63" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11.5" font-weight="300" letter-spacing="9" fill="#2A2018">AKADEMIE</text>
         <line x1="55" y1="72" x2="225" y2="72" stroke="#2A2018" stroke-width="0.6" opacity="0.2"/>
@@ -373,7 +410,7 @@
       <div class="container hero__inner">
         <p class="kicker">Weiterbildung für berufliche Veränderung</p>
         <h1 class="hero__title">Für Momente, in denen Wissen allein nicht mehr reicht</h1>
-        <p class="hero__lead">Berufliche Veränderung ist kein Problem — sie ist ein Übergang. Wir begleiten Menschen, die diesen Übergang aktiv gestalten wollen: mit fundierten Kursen, die Fachkompetenz und persönliche Entwicklung zusammendenken.</p>
+        <p class="hero__lead">Berufliche Veränderung ist ein Übergang mit vielen Chancen. Wir begleiten Menschen, die diesen Übergang aktiv gestalten wollen: mit fundierten Kursen, die Fachkompetenz und persönliche Entwicklung zusammendenken.</p>
         <a class="btn" href="#kurse">Kurse entdecken</a>
       </div>
     </section>
@@ -391,17 +428,17 @@
           <article class="card">
             <span class="badge badge--live">KI Pioniere · Start November ’26</span>
             <h3 class="card__title">KI Transformation Manager</h3>
-            <p class="card__body">Für kaufmännische Fachkräfte, die verstehen wollen, was KI im Microsoft-Ökosystem für ihren Beruf bedeutet.</p>
+            <p class="card__body">Für kaufmännische Fachkräfte, die verstehen und erleben wollen, wie KI ihren Beruf verändert und was es im Microsoft-Ökosystem konkret bedeutet.</p>
             <p class="card__meta">12 Plätze · online · inkl. Microsoft-Zertifikat</p>
-            <a class="card__link" href="ki-transformation-manager.html">Mehr erfahren <span aria-hidden="true">→</span></a>
+            <a class="card__link" href="/ki-transformation-manager/">Mehr erfahren <span aria-hidden="true">→</span></a>
           </article>
 
           <article class="card">
-            <span class="badge badge--soon">Start 30.9.26</span>
+            <span class="badge badge--soon">In Vorbereitung</span>
             <h3 class="card__title">Gelassen führen ohne Führungsposition</h3>
             <p class="card__body">Für Menschen, die Verantwortung tragen ohne formalen Titel.</p>
             <p class="card__meta">3 Tage Präsenz · kleine Gruppe</p>
-            <a class="card__link" href="/fuehren">Mehr erfahren <span aria-hidden="true">→</span></a>
+            <p class="card__meta" style="margin-bottom:0;color:var(--taupe);">Bald verfügbar</p>
           </article>
 
         </div>
@@ -419,7 +456,7 @@
           <article class="pillar">
             <span class="pillar__num" aria-hidden="true">01</span>
             <h3 class="pillar__title">Psychologisches Fundament</h3>
-            <p class="pillar__body">Unsere Lernmethoden folgen dem aktuellen Stand der Lernpsychologie, u. a. mit EduScrum. Es gilt: mitmachen und ausprobieren statt nur zuhören.</p>
+            <p class="pillar__body">Unsere Lernmethoden folgen dem aktuellen Stand der Lernpsychologie, u. a. mit EduScrum. Bei uns steht Lernen durch Erfahrung im Fokus jedes Kurses. Alle Kurse haben bewusst viel Raum zum Mitmachen, Ausprobieren und Experimentieren.</p>
           </article>
           <article class="pillar">
             <span class="pillar__num" aria-hidden="true">02</span>
@@ -429,7 +466,7 @@
           <article class="pillar">
             <span class="pillar__num" aria-hidden="true">03</span>
             <h3 class="pillar__title">Kleine Gruppen, echter Austausch</h3>
-            <p class="pillar__body">Wir arbeiten in kleinen Kursgruppen, in denen sich die Teilnehmenden kennenlernen und der Erfahrungsaustausch eine zentrale Rolle spielt.</p>
+            <p class="pillar__body">Wir schulen bewusst in kleinen Kursgruppen, in denen sich die Teilnehmenden kennenlernen und der Erfahrungsaustausch eine zentrale Rolle spielt.</p>
           </article>
         </div>
       </div>
@@ -444,8 +481,9 @@
         <p class="footer__tag">Aus Erfahrung wachsen</p>
       </div>
       <nav class="footer__nav" aria-label="Rechtliches und Kontakt">
-        <a href="/impressum">Impressum</a>
-        <a href="/datenschutz">Datenschutz</a>
+        <a href="/berufe/">Berufe im Wandel</a>
+        <a href="/impressum/">Impressum</a>
+        <a href="/datenschutz/">Datenschutz</a>
         <a href="mailto:info@jaksaa.de">info@jaksaa.de</a>
       </nav>
     </div>
