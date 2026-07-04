@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wie zukunftssicher ist dein Berufsprofil? · jaksaa Akademie</title>
+  <meta name="description" content="Kostenloser 5-Minuten-Selbsttest: Wie stark verändert KI deinen kaufmännischen Beruf, und welche Optionen hast du jetzt? Sofort ein persönliches Ergebnis, ohne Anmeldung.">
+  <meta name="theme-color" content="#FAF6EF">
+  <link rel="canonical" href="https://jaksaa.de/ki-selbsttest/">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.png" sizes="any">
+  <link rel="apple-touch-icon" href="/favicon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Wie zukunftssicher ist dein Berufsprofil? · KI-Selbsttest">
+  <meta property="og:description" content="Kostenloser 5-Minuten-Selbsttest: Wie stark verändert KI deinen kaufmännischen Beruf, und welche Optionen hast du jetzt? Sofort ein persönliches Ergebnis, ohne Anmeldung.">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:url" content="https://jaksaa.de/ki-selbsttest/">
+  <meta property="og:site_name" content="jaksaa Akademie">
+  <meta property="og:image" content="https://jaksaa.de/og-default.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="KI-Selbsttest · jaksaa Akademie">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wie zukunftssicher ist dein Berufsprofil? · KI-Selbsttest">
+  <meta name="twitter:description" content="Kostenloser 5-Minuten-Selbsttest für kaufmännische Berufe. Sofort ein persönliches Ergebnis, ohne Anmeldung.">
+  <meta name="twitter:image" content="https://jaksaa.de/og-default.png">
+
+  <!-- TODO Plausible: Konto auf plausible.io anlegen, Domain jaksaa.de eintragen, dann folgende Zeile einkommentieren (siehe manuelle Schritte im Abschlussbericht). Cookieless, kein Banner nötig.
+  <script defer data-domain="jaksaa.de" src="https://plausible.io/js/script.js"></script>
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --terracotta:   #BF6545;
+      --terracotta-d: #A4502F;
+      --terracotta-l: #D98C6E;
+      --green:        #4A6741;
+      --creme:        #FAF6EF;
+      --sand:         #EDE7DB;
+      --sand-d:       #E1D7C7;
+      --ink:          #2A2018;
+      --ink-soft:     #52473C;
+      --taupe:        #7A7068;
+      --bg:           #FFFFFF;
+      --maxw: 1120px;
+      --serif: 'Lora', Georgia, serif;
+      --sans: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: var(--sans);
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      width: 100%; max-width: var(--maxw);
+      margin-inline: auto; padding-inline: 1.5rem;
+    }
+
+    /* ---------- Header ---------- */
+    .site-header {
+      display: flex; justify-content: center;
+      padding: 1.75rem 1.5rem; border-bottom: 1px solid var(--sand);
+    }
+    .brand svg { width: 178px; height: auto; }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      background: var(--creme);
+      border-bottom: 1px solid var(--sand);
+      padding: clamp(3rem, 7vw, 5rem) 0 clamp(2.5rem, 5vw, 4rem);
+      text-align: center;
+    }
+    .kicker {
+      font-size: .76rem; font-weight: 500; text-transform: uppercase;
+      letter-spacing: .2em; color: var(--taupe);
+    }
+    .hero h1 {
+      font-family: var(--serif); font-weight: 500;
+      font-size: clamp(1.9rem, 4.8vw, 3.1rem);
+      line-height: 1.14; letter-spacing: -.015em;
+      margin: 1rem 0 1.1rem; color: var(--ink);
+    }
+    .hero h1 em { font-style: italic; color: var(--terracotta); }
+    .hero__lead {
+      font-size: clamp(1rem, 2vw, 1.12rem); color: var(--ink-soft);
+      max-width: 560px; margin: 0 auto; line-height: 1.65;
+    }
+    .hero-meta {
+      margin-top: 1.5rem;
+      display: flex; gap: 1.8rem; justify-content: center; flex-wrap: wrap;
+      font-size: .86rem; color: var(--taupe);
+    }
+    .hero-meta span::before { content: '·'; margin-right: .5rem; color: var(--sand-d); }
+    .hero-meta span:first-child::before { display: none; }
+
+    /* ---------- Quiz ---------- */
+    .quiz-section { padding: clamp(3rem, 7vw, 5rem) 0; }
+
+    .progress-wrap { max-width: 640px; margin: 0 auto 2.5rem; }
+    .progress-meta {
+      display: flex; justify-content: space-between;
+      font-size: .82rem; color: var(--taupe); margin-bottom: .6rem;
+    }
+    .progress-bar {
+      height: 4px; background: var(--sand); border-radius: 999px; overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%; background: var(--terracotta);
+      border-radius: 999px; transition: width .45s ease;
+    }
+
+    .question-card {
+      max-width: 640px; margin: 0 auto;
+      background: var(--bg); border: 1px solid var(--sand);
+      border-radius: 16px; padding: clamp(1.8rem, 5vw, 2.8rem);
+      box-shadow: 0 8px 40px -16px rgba(42,32,24,.1);
+      transition: opacity .22s ease, transform .22s ease;
+    }
+    .question-card.fade-out { opacity: 0; transform: translateX(-18px); }
+    .question-card.fade-in  { animation: slideIn .28s ease forwards; }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(18px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+
+    .q-num {
+      font-size: .75rem; font-weight: 600; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--terracotta); margin-bottom: .75rem;
+    }
+    .q-text {
+      font-family: var(--serif); font-weight: 500;
+      font-size: clamp(1.15rem, 2.6vw, 1.5rem);
+      line-height: 1.3; color: var(--ink); margin-bottom: 1.7rem;
+    }
+
+    .options { display: grid; gap: .7rem; }
+    .option {
+      display: flex; align-items: flex-start; gap: .9rem;
+      padding: .95rem 1.15rem; border: 1.5px solid var(--sand);
+      border-radius: 10px; cursor: pointer; text-align: left;
+      background: var(--bg); font-family: var(--sans);
+      font-size: .98rem; color: var(--ink-soft); line-height: 1.45;
+      transition: border-color .18s, background .18s, color .18s;
+      width: 100%;
+    }
+    .option:hover  { border-color: var(--terracotta-l); background: var(--creme); color: var(--ink); }
+    .option.sel    { border-color: var(--terracotta); background: rgba(191,101,69,.06); color: var(--ink); }
+
+    .opt-dot {
+      width: 20px; height: 20px; border-radius: 50%; flex-shrink: 0; margin-top: 1px;
+      border: 2px solid var(--sand-d); display: flex; align-items: center; justify-content: center;
+      transition: border-color .18s, background .18s;
+    }
+    .option.sel .opt-dot { border-color: var(--terracotta); background: var(--terracotta); }
+    .option.sel .opt-dot::after {
+      content: ''; width: 7px; height: 7px; border-radius: 50%; background: #fff;
+    }
+
+    .q-nav { margin-top: 1.8rem; display: flex; justify-content: flex-end; }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: var(--terracotta); color: #fff;
+      font-family: var(--sans); font-weight: 500; font-size: 1rem; letter-spacing: .01em;
+      padding: .9rem 1.75rem; border: none; border-radius: 8px; cursor: pointer;
+      transition: background .22s, transform .22s, box-shadow .22s;
+    }
+    .btn:hover:not(:disabled) {
+      background: var(--terracotta-d); transform: translateY(-2px);
+      box-shadow: 0 10px 24px -12px rgba(164,80,47,.6);
+    }
+    .btn:disabled { opacity: .38; cursor: not-allowed; }
+
+    /* ---------- Result ---------- */
+    .result-section {
+      display: none;
+      padding: clamp(3rem, 7vw, 5rem) 0;
+      background: var(--creme);
+      border-top: 1px solid var(--sand);
+    }
+    .result-inner { max-width: 700px; margin: 0 auto; }
+
+    .result-tag {
+      display: inline-block; font-size: .74rem; font-weight: 600;
+      text-transform: uppercase; letter-spacing: .1em;
+      padding: .38rem .9rem; border-radius: 999px;
+      background: rgba(191,101,69,.1); color: var(--terracotta);
+      border: 1px solid rgba(191,101,69,.28); margin-bottom: 1.1rem;
+    }
+    .result-title {
+      font-family: var(--serif); font-weight: 500;
+      font-size: clamp(1.65rem, 3.8vw, 2.5rem);
+      line-height: 1.15; color: var(--ink); margin-bottom: 1.6rem;
+    }
+    .result-title em { font-style: italic; color: var(--terracotta); }
+
+    .risk-meter {
+      background: var(--bg); border: 1px solid var(--sand);
+      border-radius: 12px; padding: 1.4rem 1.7rem; margin: 0 0 1.8rem;
+    }
+    .risk-meter__label {
+      font-size: .76rem; font-weight: 600; letter-spacing: .08em;
+      text-transform: uppercase; color: var(--taupe); margin-bottom: .75rem;
+    }
+    .risk-bar-track {
+      height: 10px; background: var(--sand); border-radius: 999px; overflow: hidden;
+    }
+    .risk-bar {
+      height: 100%; border-radius: 999px; width: 0;
+      transition: width 1s ease .4s;
+    }
+    .risk-bar--high { background: linear-gradient(90deg, #BF6545, #A4502F); }
+    .risk-bar--mid  { background: linear-gradient(90deg, #D98C6E, #BF6545); }
+    .risk-bar--opp  { background: linear-gradient(90deg, #4A6741, #6A9A61); }
+    .risk-meter__sub { margin-top: .65rem; font-size: .87rem; color: var(--taupe); }
+
+    .result-body { color: var(--ink-soft); font-size: 1.04rem; line-height: 1.72; }
+    .result-body p + p { margin-top: 1rem; }
+    .result-highlight {
+      background: var(--bg); border-left: 3px solid var(--terracotta);
+      border-radius: 0 8px 8px 0; padding: 1rem 1.2rem;
+      margin: 1.3rem 0; font-size: 1.01rem; color: var(--ink); line-height: 1.6;
+    }
+
+    .result-cta {
+      margin-top: 2.4rem; text-align: center;
+      background: var(--ink); border-radius: 14px;
+      padding: clamp(2rem, 4vw, 3rem);
+    }
+    .result-cta h3 {
+      font-family: var(--serif); font-weight: 500;
+      font-size: clamp(1.3rem, 2.8vw, 1.9rem);
+      color: var(--creme); margin-bottom: .75rem; line-height: 1.25;
+    }
+    .result-cta p { color: rgba(250,246,239,.7); font-size: 1rem; margin-bottom: 1.6rem; line-height: 1.55; }
+    .btn-cta { font-size: 1.05rem; padding: 1rem 2rem; }
+    .result-cta .note { margin-top: 1rem; font-size: .83rem; color: rgba(250,246,239,.4); }
+
+    /* ---------- Footer ---------- */
+    .site-footer {
+      background: var(--creme); color: var(--ink-soft);
+      padding: clamp(2.8rem, 6vw, 3.8rem) 0 1.6rem;
+      border-top: 1px solid var(--sand);
+    }
+    .footer__inner { display: flex; flex-direction: column; gap: 1.7rem; }
+    .footer__word { font-family: var(--serif); font-size: 1.4rem; letter-spacing: .02em; color: var(--ink); }
+    .footer__word span { font-family: var(--sans); font-size: .68rem; text-transform: uppercase; letter-spacing: .3em; color: var(--taupe); margin-left: .45rem; vertical-align: 2px; }
+    .footer__tag { font-family: var(--serif); font-style: italic; font-size: .95rem; color: var(--taupe); margin-top: .5rem; }
+    .footer__nav { display: flex; flex-direction: column; gap: .75rem; }
+    .footer__nav a { font-size: .95rem; color: var(--ink-soft); transition: color .2s; }
+    .footer__nav a:hover { color: var(--terracotta); }
+    .footer__bottom { margin-top: 2.3rem; padding-top: 1.45rem; border-top: 1px solid var(--sand); }
+    .footer__bottom p { font-size: .82rem; color: var(--taupe); }
+
+    @media (min-width: 680px) {
+      .footer__inner { flex-direction: row; justify-content: space-between; align-items: flex-start; }
+      .footer__nav { align-items: flex-end; }
+    }
+    @media (min-width: 760px) { .container { padding-inline: 2rem; } }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { transition: none !important; animation: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="jaksaa Akademie · Startseite">
+      <svg viewBox="0 0 280 95" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="jaksaa Akademie">
+        <text x="140" y="46" text-anchor="middle" font-family="Lora, Georgia, serif" font-size="40" font-weight="400" letter-spacing="3.2" fill="#2A2018">jaksaa</text>
+        <text x="140" y="63" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11.5" font-weight="300" letter-spacing="9" fill="#2A2018">AKADEMIE</text>
+        <line x1="55" y1="72" x2="225" y2="72" stroke="#2A2018" stroke-width="0.6" opacity="0.2"/>
+        <text x="140" y="86" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="300" letter-spacing="1.4" fill="#7A7068">Aus Erfahrung wachsen</text>
+      </svg>
+    </a>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <p class="kicker">Selbsttest</p>
+      <h1>Wie zukunftssicher ist<br><em>dein Berufsprofil?</em></h1>
+      <p class="hero__lead">KI verändert kaufmännische Berufe schneller als erwartet. Beantworte 5 Fragen, und erfahre, wie stark dein Berufsfeld betroffen ist und welche Optionen du jetzt hast.</p>
+      <div class="hero-meta">
+        <span>Ca. 3 Minuten</span>
+        <span>5 Fragen</span>
+        <span>Persönliches Ergebnis</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="quiz-section" id="quiz-section">
+    <div class="container">
+      <div class="progress-wrap">
+        <div class="progress-meta">
+          <span id="prog-label">Frage 1 von 5</span>
+          <span id="prog-pct">20 %</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="prog-fill" style="width:20%"></div>
+        </div>
+      </div>
+      <div class="question-card" id="q-card"></div>
+    </div>
+  </section>
+
+  <!-- RESULT -->
+  <section class="result-section" id="result-section">
+    <div class="container">
+      <div class="result-inner" id="result-inner"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="footer__word">jaksaa <span>Akademie</span></div>
+        <p class="footer__tag">Aus Erfahrung wachsen</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="/">Startseite</a>
+        <a href="/berufe/">Berufe im Wandel</a>
+        <a href="/impressum/">Impressum</a>
+        <a href="/datenschutz/">Datenschutz</a>
+        <a href="mailto:info@jaksaa.de">info@jaksaa.de</a>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 jaksaa Akademie · Tietoa GmbH · Alle Angaben vorbehaltlich.</p>
+    </div>
+  </footer>
+
+  <script>
+    const questions = [
+      {
+        text: 'In welchem Bereich hast du zuletzt gearbeitet?',
+        options: [
+          { label: 'Buchhaltung / Controlling / Finanzen',       field: 'Buchhaltung und Controlling' },
+          { label: 'Sekretariat / Assistenz / Office Management', field: 'Sekretariat und Assistenz'    },
+          { label: 'Einkauf / Logistik / Supply Chain',           field: 'Einkauf und Logistik'         },
+          { label: 'HR / Personal / Recruiting',                  field: 'HR und Personal'              },
+          { label: 'Vertrieb / Marketing / Kundenservice',        field: 'Vertrieb und Marketing'       },
+          { label: 'Anderes kaufmännisches Feld',                 field: 'deinem Berufsfeld'            },
+        ]
+      },
+      {
+        text: 'Wie ist deine berufliche Situation gerade?',
+        options: [
+          { label: 'Ich bin arbeitssuchend'                                    },
+          { label: 'Mein Arbeitsverhältnis endet bald'                         },
+          { label: 'Ich bin beschäftigt, aber offen für einen Neustart'        },
+          { label: 'Ich suche nach einer echten beruflichen Perspektive'       },
+        ]
+      },
+      {
+        text: 'Was geht dir durch den Kopf, wenn du an KI und deinen Beruf denkst?',
+        options: [
+          { label: 'Dass Aufgaben, die ich heute erledige, bald automatisiert werden' },
+          { label: 'Dass ich nicht weiß, wie ich mit KI überhaupt anfangen soll'      },
+          { label: 'Dass andere, Kollegen oder neue Bewerber, bald mehr können als ich' },
+          { label: 'Ich sehe eine Chance, weiß aber nicht, wie ich sie nutze'        },
+        ]
+      },
+      {
+        text: 'Wie viel Erfahrung hast du bisher mit KI-Tools?',
+        options: [
+          { label: 'Kaum, ich habe höchstens mal ChatGPT kurz ausprobiert', exp: 'low'  },
+          { label: 'Ich nutze KI-Tools gelegentlich, aber nicht systematisch', exp: 'mid' },
+          { label: 'Ich nutze KI regelmäßig und möchte tiefer einsteigen',    exp: 'high' },
+        ]
+      },
+      {
+        text: 'Was wäre für dich in 6 Monaten ein echter Erfolg?',
+        options: [
+          { label: 'Ein neuer Job mit echten Zukunftsperspektiven'                         },
+          { label: 'Wissen, wie ich KI in meinem Alltag und Unternehmen sinnvoll einsetze' },
+          { label: 'Ein anerkanntes Zertifikat, das meinen Marktwert sichtbar steigert'    },
+          { label: 'Klarheit darüber, wohin mein beruflicher Weg jetzt führt'              },
+        ]
+      }
+    ];
+
+    const results = {
+      low: {
+        tag: 'Starke Ausgangslage',
+        title: 'Du bist bereits weiter als die meisten, <em>jetzt kommt der nächste Schritt.</em>',
+        barClass: 'risk-bar--opp', barWidth: '82%',
+        meterLabel: 'Dein Positionierungspotenzial',
+        meterSub:   'Hoch, deine Erfahrung kombiniert mit einem anerkannten Abschluss',
+        body: `
+          <p>Du nutzt KI bereits aktiv, damit bist du in <strong id="r-field"></strong> schon deutlich weiter als die meisten Kolleginnen und Kollegen.</p>
+          <p>Was jetzt fehlt, um diesen Vorsprung auch nach außen sichtbar zu machen: ein anerkannter Abschluss und ein strukturiertes Framework, das zeigt, wie du KI auf Unternehmensebene einführst, nicht nur nutzt.</p>
+          <div class="result-highlight">
+            Das Microsoft-Zertifikat „AI Transformation Leader" (AB-731) ist genau dafür: für Menschen, die KI nicht nur anwenden, sondern strategisch in Organisationen verankern wollen.
+          </div>
+        `
+      },
+      mid: {
+        tag: 'Guter Ausgangspunkt',
+        title: 'Du siehst die Zeichen, <em>jetzt kommt es auf den nächsten Schritt an.</em>',
+        barClass: 'risk-bar--mid', barWidth: '58%',
+        meterLabel: 'Veränderungsdruck in deinem Berufsfeld',
+        meterSub:   'Mittel bis hoch, wer sich jetzt positioniert, hat einen echten Vorsprung',
+        body: `
+          <p>Du nutzt KI gelegentlich, das ist ein echter Vorteil. Aber gelegentliches Nutzen und das strategische Einführen von KI in einem Unternehmen sind zwei verschiedene Qualifikationen.</p>
+          <p>Der Markt sucht genau das: Menschen, die verstehen, wie KI in <strong id="r-field"></strong> eingebettet wird, mit Business Case, Change-Prozess und Governance. Das lässt sich lernen.</p>
+          <div class="result-highlight">
+            Du bist näher am Ziel als du denkst. Es fehlt der strukturierte Rahmen, um das Wissen in eine echte, sichtbare Qualifikation zu verwandeln.
+          </div>
+        `
+      },
+      high: {
+        tag: 'Guter Zeitpunkt zum Einsteigen',
+        title: 'Noch am Anfang, <em>und genau das ist dein Vorteil.</em>',
+        barClass: 'risk-bar--high', barWidth: '76%',
+        meterLabel: 'Veränderungsdruck in deinem Berufsfeld',
+        meterSub:   'Hoch, aber du brauchst keine Vorkenntnisse, um zu handeln',
+        body: `
+          <p>In <strong id="r-field"></strong> verändern sich viele klassische Aufgaben gerade grundlegend, das ist keine ferne Zukunft. Aber: Du musst kein KI-Experte werden, um davon zu profitieren. Du brauchst auch keinerlei technisches Vorwissen.</p>
+          <p>Was gefragt ist, sind Menschen, die KI mit kaufmännischem Verstand einordnen und im Unternehmen einführen können. Genau das lernst du, von Grund auf, in 6 Wochen, ohne eine Zeile Code.</p>
+          <div class="result-highlight">
+            Wer jetzt einsteigt, hat einen echten Vorsprung. Deine Berufserfahrung ist die Grundlage, die KI-Kompetenz kommt oben drauf.
+          </div>
+        `
+      }
+    };
+
+    let current = 0;
+    let answers  = new Array(questions.length).fill(null);
+    let field    = 'deinem Berufsfeld';
+
+    function render(idx) {
+      const q    = questions[idx];
+      const card = document.getElementById('q-card');
+      card.innerHTML = `
+        <p class="q-num">Frage ${idx + 1} von ${questions.length}</p>
+        <p class="q-text">${q.text}</p>
+        <div class="options" role="group" aria-label="Antwortoptionen">
+          ${q.options.map((o, i) => `
+            <button class="option${answers[idx] === i ? ' sel' : ''}"
+                    onclick="pick(${i})" aria-pressed="${answers[idx] === i}">
+              <span class="opt-dot"></span>
+              <span>${o.label}</span>
+            </button>
+          `).join('')}
+        </div>
+        <div class="q-nav">
+          <button class="btn" id="next-btn" onclick="advance()"
+                  ${answers[idx] === null ? 'disabled' : ''}>
+            ${idx < questions.length - 1 ? 'Weiter →' : 'Mein Ergebnis anzeigen →'}
+          </button>
+        </div>
+      `;
+    }
+
+    function pick(i) {
+      answers[current] = i;
+      document.querySelectorAll('.option').forEach((el, idx) => {
+        el.classList.toggle('sel', idx === i);
+        el.setAttribute('aria-pressed', idx === i);
+      });
+      document.getElementById('next-btn').disabled = false;
+    }
+
+    function advance() {
+      if (answers[current] === null) return;
+
+      // Store field from Q1
+      if (current === 0) {
+        field = questions[0].options[answers[0]].field;
+      }
+
+      if (current < questions.length - 1) {
+        current++;
+        updateProgress();
+        const card = document.getElementById('q-card');
+        card.classList.add('fade-out');
+        setTimeout(() => {
+          card.classList.remove('fade-out');
+          render(current);
+          card.classList.add('fade-in');
+          setTimeout(() => card.classList.remove('fade-in'), 300);
+        }, 200);
+      } else {
+        showResult();
+      }
+    }
+
+    function updateProgress() {
+      const pct = Math.round(((current + 1) / questions.length) * 100);
+      document.getElementById('prog-label').textContent = `Frage ${current + 1} von ${questions.length}`;
+      document.getElementById('prog-pct').textContent   = pct + ' %';
+      document.getElementById('prog-fill').style.width  = pct + '%';
+    }
+
+    function showResult() {
+      // Determine tier from KI-experience (Q4, index 3)
+      const exp   = (questions[3].options[answers[3]] || {}).exp || 'low';
+      const tier  = exp === 'high' ? 'low' : exp === 'mid' ? 'mid' : 'high';
+      const r     = results[tier];
+
+      document.getElementById('quiz-section').style.display = 'none';
+      const sec = document.getElementById('result-section');
+      sec.style.display = 'block';
+
+      // TODO Plausible-Conversion: sobald Plausible aktiv ist, folgende Zeile einkommentieren
+      // (Ziel "Test abgeschlossen" in Plausible als Custom Event anlegen):
+      // if (window.plausible) window.plausible('Test abgeschlossen');
+
+      document.getElementById('result-inner').innerHTML = `
+        <span class="result-tag">${r.tag}</span>
+        <h2 class="result-title">${r.title}</h2>
+        <div class="risk-meter">
+          <p class="risk-meter__label">${r.meterLabel}</p>
+          <div class="risk-bar-track">
+            <div class="risk-bar ${r.barClass}" id="r-bar" style="width:0"></div>
+          </div>
+          <p class="risk-meter__sub">${r.meterSub}</p>
+        </div>
+        <div class="result-body">${r.body}</div>
+        <div class="result-cta">
+          <h3>Der nächste Schritt: KI Transformation Manager/in</h3>
+          <p>6 Wochen online · Microsoft-Zertifikat (AB-731) · bei Zulassung förderfähig über Bildungsgutschein · geplanter Start November 2026 · 12 Plätze</p>
+          <a class="btn btn-cta" id="cta-link" href="/ki-transformation-manager/">Mehr erfahren & unverbindlich vormerken →</a>
+          <p class="note">Unverbindlich · keine Kosten · 12 Plätze verfügbar</p>
+        </div>
+      `;
+
+      // Insert field name
+      const fieldEl = document.getElementById('r-field');
+      if (fieldEl) fieldEl.textContent = field;
+
+      // URL-Parameter an LP übergeben
+      const ctaLink = document.getElementById('cta-link');
+      if (ctaLink) {
+        const params = new URLSearchParams({
+          field: field,
+          exp:   exp,
+          sit:   answers[1] !== null ? questions[1].options[answers[1]].label.substring(0, 30) : ''
+        });
+        ctaLink.href = `/ki-transformation-manager/?${params.toString()}`;
+      }
+
+      // Animate bar
+      setTimeout(() => {
+        document.getElementById('r-bar').style.width = r.barWidth;
+      }, 250);
+
+      sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // Init
+    render(0);
+  </script>
+
+</body>
+</html>
